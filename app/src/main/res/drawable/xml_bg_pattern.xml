@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--
+    <item>
+        <shape
+            android:shape="rectangle">
+            <gradient
+                android:angle="90"
+                android:startColor="#4e75d0"
+                android:centerColor="#4e96cb"
+                android:endColor="#4fcdc3"
+                android:type="linear"
+                />
+        </shape>
+    </item>
+    -->
+
+    <item>
+        <bitmap android:src="@drawable/add"
+            android:tileMode="disabled"
+            android:gravity="fill"/>
+    </item>
+
+    <item>
+        <color android:color="#b25aa4f6"/>
+    </item>
+    <!--
+        0.8 => cc => Pattern not visible
+        0.7 => b2 => No
+        0.6 => 99 => Barely
+        0.5 => 7f
+        0.4 => 66
+        0.3 => 4c
+        0.2 => 33
+        0.1 => 19
+    -->
+
+</layer-list>
