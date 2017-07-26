@@ -5,6 +5,9 @@
     android:layout_height="match_parent"
     android:textSize="16sp"
     android:textColor="#646464"
+    android:paddingTop="7dp"
+    android:paddingBottom="2.5dp"
+    android:paddingStart="10dp"
 
 
     >

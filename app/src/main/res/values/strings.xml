@@ -2,7 +2,6 @@
     <string name="app_name">Add_Teacher</string>
 
 
-
     <string-array name="classes">
         <item>Male</item>
         <item>Female</item>
