@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:gravity="center_horizontal"
     android:orientation="vertical"
-    android:background="@drawable/xml_bg_pattern"
+    android:background="@drawable/xml_bg_pattern_first"
     tools:context="com.grademojo.add_teacher.Teacher">
 
 
@@ -16,7 +16,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="60dp"
-        android:text="is class teacher?"
+        android:text="is class teacher ?"
         android:textAllCaps="true"
         android:textColor="@color/white"
         android:textSize="26sp"
@@ -96,9 +96,7 @@
                     android:id="@+id/text_no"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-
                     android:text="no"
-
                     android:textAllCaps="true"
 
                     />
@@ -128,6 +126,8 @@
     </android.support.v7.widget.CardView>
 
 
+
+
     <View
         android:layout_width="wrap_content"
         android:layout_height="1dp"
@@ -138,164 +138,183 @@
         android:background="#31ffffff"
 
         />
-
-
-    <RelativeLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
-
-        <TextView
-            android:id="@+id/class_text"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="class"
-            android:textAllCaps="true"
-            android:textColor="@color/white"
-            android:textSize="16sp"
-            android:textStyle="bold"
-            android:paddingStart="5dp"
-            android:paddingEnd="5dp"
-            />
-
-
-        <TextView
-            android:id="@+id/subject_text"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="section"
-            android:layout_marginStart="15dp"
-            android:layout_toEndOf="@+id/class_text"
-            android:textAllCaps="true"
-            android:textColor="@color/white"
-            android:textSize="16sp"
-            android:textStyle="bold"
-            android:paddingStart="5dp"
-            android:paddingEnd="5dp"
-            />
-
-
-
-
-
-
-
-
-
-    <android.support.v7.widget.CardView
-
-        android:id="@+id/edit_card_view"
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:cardCornerRadius="5dp"
-        android:layout_below="@+id/class_text"
-        android:layout_alignStart="@+id/class_text"
-        android:layout_alignEnd="@+id/class_text"
-
-        android:layout_marginTop="20dp"
-        android:layout_centerHorizontal="true"
-        app:cardElevation="10dp"
-
-        app:cardBackgroundColor="@color/white"
-
-
+        android:orientation="horizontal"
         >
 
 
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
 
-
-    <Spinner
-        android:id="@+id/edit_text_gender"
-        android:layout_width="60dp"
-        android:layout_height="32dp"
-
-
-        android:textColor="@color/grey"
-        android:textSize="16sp"
-        android:popupBackground="#ffffff"
-        android:background="@null"
-        >
-
-    </Spinner>
-
-
-        <ImageView
-            android:layout_width="12dp"
-            android:layout_height="12dp"
-            android:src="@drawable/arrow"
-            android:layout_marginStart="37dp"
-            android:layout_marginTop="13dp"
-            android:rotation="90"
-
-            />
-
-
-
-    </android.support.v7.widget.CardView>
-
-
-    <android.support.v7.widget.CardView
-
-        android:id="@+id/edit_card_view1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:cardCornerRadius="5dp"
-        android:layout_toEndOf="@+id/edit_card_view"
-        android:layout_marginTop="20dp"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@+id/subject_text"
-        android:layout_alignStart="@+id/subject_text"
-        app:cardElevation="10dp"
-        android:layout_marginStart="10dp"
-
-        app:cardBackgroundColor="@color/white"
-
-
-        >
-
-
-
-
-        <Spinner
-            android:id="@+id/edit_text_gender1"
-            android:layout_width="45dp"
-            android:layout_height="30dp"
-
-
-            android:textColor="@color/grey"
-            android:textSize="16sp"
-            android:popupBackground="#ffffff"
-            android:background="@null"
             >
 
-        </Spinner>
-
-
-        <ImageView
-            android:layout_width="12dp"
-            android:layout_height="12dp"
-            android:src="@drawable/arrow"
-            android:layout_marginStart="27dp"
-            android:layout_marginTop="11dp"
-            android:rotation="90"
-
-            />
 
 
 
-    </android.support.v7.widget.CardView>
+            <TextView
+                android:id="@+id/class_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="class"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+
+
+                />
+
+            <android.support.v7.widget.CardView
+
+                android:id="@+id/edit_card_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="10dp"
+                android:layout_marginTop="20dp"
+                app:cardElevation="5dp"
+                android:layout_marginBottom="3dp"
+                app:cardBackgroundColor="@color/white"
+
+                >
+
+
+                <Spinner
+                    android:id="@+id/edit_text_gender"
+                    android:layout_width="60dp"
+                    android:layout_height="32dp"
+                    android:textColor="@color/grey"
+                    android:textSize="16sp"
+                    android:popupBackground="#ffffff"
+                    android:background="@null"
+                    android:layout_marginEnd="7dp"
+                    android:layout_marginStart="15dp"
+                    >
+
+                </Spinner>
+
+
+                <ImageView
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:src="@drawable/arrow"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginTop="13dp"
+                    android:rotation="90"
+                    android:alpha="0.2"
+
+                    />
 
 
 
-</RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginStart="30dp"
+
+            >
+
+
+
+
+            <TextView
+                android:id="@+id/subject_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="section"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+
+                />
+
+
+
+
+
+            <android.support.v7.widget.CardView
+
+                    android:id="@+id/edit_card_view1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="5dp"
+                    android:layout_marginTop="20dp"
+
+                    app:cardBackgroundColor="@color/white"
+
+
+                    >
+
+
+
+
+                <Spinner
+                    android:id="@+id/edit_text_gender1"
+                    android:layout_width="45dp"
+                    android:layout_height="30dp"
+                    android:textColor="@color/grey"
+                    android:textSize="16sp"
+                    android:popupBackground="#ffffff"
+                    android:background="@null"
+                    android:layout_marginEnd="6dp"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginStart="8dp"
+
+
+                    >
+
+                </Spinner>
+
+
+                <ImageView
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:src="@drawable/arrow"
+                    android:layout_marginStart="36dp"
+                    android:layout_marginTop="12dp"
+                    android:rotation="90"
+                    android:alpha="0.2"
+
+                    />
+
+
+
+            </android.support.v7.widget.CardView>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
 
 
     <ImageView
+        android:id="@+id/plus_button"
         android:layout_width="20dp"
         android:layout_height="20dp"
         android:src="@drawable/plus"
         android:layout_marginTop="20dp"
 
+
         />
+
 
 
 
@@ -309,9 +328,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:cardCornerRadius="15dp"
-        android:layout_below="@+id/edit_card_view_genger"
+
         android:layout_marginTop="150dp"
-        android:layout_centerHorizontal="true"
+
         app:cardElevation="5dp"
         android:layout_marginBottom="10dp"
         app:cardBackgroundColor="@color/white"
@@ -340,11 +359,6 @@
 
 
     </android.support.v7.widget.CardView>
-
-
-
-
-
 
 
 
