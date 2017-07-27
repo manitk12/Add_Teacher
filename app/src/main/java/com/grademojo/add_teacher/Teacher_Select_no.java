@@ -7,7 +7,7 @@ import android.support.v7.widget.CardView;
 import android.view.View;
 import android.widget.RelativeLayout;
 
-public class Teacher extends AppCompatActivity {
+public class Teacher_Select_no extends AppCompatActivity {
 
 
     private CardView toogle_cover ,main_card_View;
@@ -15,15 +15,10 @@ public class Teacher extends AppCompatActivity {
 
 
 
-
-
-
-    private Boolean button_state_yes;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_teacher);
+        setContentView(R.layout.activity_teacher__select_no);
 
 
         toogle_cover = (CardView) findViewById(R.id.toggle_button);
@@ -31,43 +26,15 @@ public class Teacher extends AppCompatActivity {
         main_card_View = (CardView) findViewById(R.id.edit_card_view_genger);
 
 
-        button_state_yes = true;
+
+
 
         main_card_View.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
 
-                if (button_state_yes)
-                {
-                    button_state_yes = false;
 
-
-                    RelativeLayout.LayoutParams lps = (RelativeLayout.LayoutParams) toogle_cover.getLayoutParams();
-
-                    lps.addRule(RelativeLayout.ALIGN_START, R.id.frame_yes);
-                    lps.addRule(RelativeLayout.ALIGN_END, R.id.frame_yes);
-                    lps.addRule(RelativeLayout.ALIGN_TOP, R.id.frame_yes);
-                    lps.addRule(RelativeLayout.ALIGN_BOTTOM, R.id.frame_yes);
-
-                    toogle_cover.setLayoutParams(lps);
-
-                    Intent i = new Intent(Teacher.this, Teacher_Select_no.class);
-                    startActivity(i);
-
-
-
-
-
-
-
-
-
-                }
-
-                else {
-
-                    button_state_yes = true;
 
 
                     RelativeLayout.LayoutParams lps = (RelativeLayout.LayoutParams) toogle_cover.getLayoutParams();
@@ -80,22 +47,14 @@ public class Teacher extends AppCompatActivity {
                     toogle_cover.setLayoutParams(lps);
 
 
-                    Intent i = new Intent(Teacher.this, Teacher_Select_Yes_Again.class);
+                    Intent i = new Intent(Teacher_Select_no.this,Teacher_select_yes.class);
                     startActivity(i);
 
 
 
-                }
-
 
             }
         });
-
-
-
-
-
-
 
 
 

@@ -9,14 +9,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Teacher">
+        <activity android:name=".Teacher_select_yes">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".MainActivity" />
+        <activity android:name=".Teacher_Select_Yes_Again" />
+        <activity android:name=".Main2Activity" />
+        <activity android:name=".Teacher" />
+        <activity android:name=".Teacher_Select_no"/>
     </application>
 
 </manifest>
