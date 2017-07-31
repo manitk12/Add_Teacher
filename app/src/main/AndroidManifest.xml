@@ -9,7 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Teacher_select_yes">
+        <activity android:name=".New_Login_Signup_Page">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -20,7 +20,9 @@
         <activity android:name=".Teacher_Select_Yes_Again" />
         <activity android:name=".Main2Activity" />
         <activity android:name=".Teacher" />
-        <activity android:name=".Teacher_Select_no"/>
+        <activity android:name=".Teacher_Select_no" />
+        <activity android:name=".Teacher_select_yes" />
+        <activity android:name=".Again_New_Login_Page"></activity>
     </application>
 
 </manifest>
