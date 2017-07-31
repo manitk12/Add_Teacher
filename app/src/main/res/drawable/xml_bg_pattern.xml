@@ -22,7 +22,9 @@
     </item>
 
     <item>
-        <color android:color="#665aa4f6"/>
+        <color android:color="#665aa4f6"
+
+            />
     </item>
     <!--
         0.8 => cc => Pattern not visible

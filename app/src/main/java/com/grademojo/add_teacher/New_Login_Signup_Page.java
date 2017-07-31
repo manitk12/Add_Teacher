@@ -61,7 +61,7 @@ public class New_Login_Signup_Page extends AppCompatActivity {
 
 
                 text_Login.setPadding(convertDpToPx(20,SCREEN_DENSITY),convertDpToPx(10, SCREEN_DENSITY),convertDpToPx(20, SCREEN_DENSITY),convertDpToPx(10,SCREEN_DENSITY));
-                text_Signup.setPadding(convertDpToPx(15,SCREEN_DENSITY),convertDpToPx(10, SCREEN_DENSITY),convertDpToPx(15, SCREEN_DENSITY),convertDpToPx(10,SCREEN_DENSITY));
+                text_Signup.setPadding(convertDpToPx(10,SCREEN_DENSITY),convertDpToPx(10, SCREEN_DENSITY),convertDpToPx(10, SCREEN_DENSITY),convertDpToPx(10,SCREEN_DENSITY));
 
 
 
@@ -84,7 +84,7 @@ public class New_Login_Signup_Page extends AppCompatActivity {
 
                 Signup_image.setLayoutParams(signup);
 
-                login_Card_View.setCardBackgroundColor(Color.parseColor("#5662cc"));
+                login_Card_View.setCardBackgroundColor(Color.parseColor("#60beed"));
                 login_Card_View.setCardElevation(5);
 
                 login_Card_View.setRadius(convertDpToPx(22, SCREEN_DENSITY));
@@ -125,24 +125,7 @@ public class New_Login_Signup_Page extends AppCompatActivity {
 
 
                 text_Signup.setTextColor(Color.parseColor("#ffffff"));
-
                 text_Login.setTextColor(Color.parseColor("#8e8e8e"));
-
-
-
-
-
-//
-//                android:paddingTop="15dp"
-//
-//                android:paddingStart="2dp"
-//                android:paddingEnd="2dp"
-//                android:paddingBottom="15dp"
-
-
-//                text_Signup.setPadding(2,15,2,15);
-//                text_Login.setPadding(20,10,20,10);
-
 
 
                 login.height = convertDpToPx(0,SCREEN_DENSITY);
@@ -156,7 +139,7 @@ public class New_Login_Signup_Page extends AppCompatActivity {
 
 
 
-                sign_up_Card_View.setCardBackgroundColor(Color.parseColor("#5662cc"));
+                sign_up_Card_View.setCardBackgroundColor(Color.parseColor("#60beed"));
                 sign_up_Card_View.setCardElevation(5);
 
                 sign_up_Card_View.setRadius(convertDpToPx(22, SCREEN_DENSITY));
